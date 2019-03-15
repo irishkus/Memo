@@ -17,10 +17,6 @@ class ViewController: UIViewController {
     var openCards = [String]()
     
     var scopeCount = 0 
-//        didSet {
-//             scope.text = "Scope: \(scopeCount)"
-//        }
-//    }
     
     @IBAction func touchButton(_ sender: UIButton) {
         if let buttonNumber = cardsButton.index(of: sender) {

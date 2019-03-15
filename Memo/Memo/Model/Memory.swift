@@ -23,17 +23,14 @@ class Memory {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
-            //    didOpenCard(cards[index])
                 indexOfOneAndOnlyFaceUpCard = nil
                 cards[index].isFaceUp = true
             } else {
                 for flipdownIndex in cards.indices {
                     cards[flipdownIndex].isFaceUp = false
                 }
-              //  didOpenCard(cards[index])
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
-              //  openCards.append(cards[index])
             }
         }
         flipCount += 1
@@ -61,6 +58,5 @@ class Memory {
             sortCards.append(cards.remove(at: index))
         }
         cards = sortCards
-        //TODO arc4random_uniform(UInt32(emojiChoices.count))
     }
 }
